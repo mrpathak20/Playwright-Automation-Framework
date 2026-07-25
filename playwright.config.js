@@ -7,7 +7,7 @@ const ENV = process.env.ENV || 'uat';
 const ENV_URLS = {
   dev: '',
   prod: '',
-  uat:'https://sellonlineuat.tataaia.com/app/digital/'
+  uat:''
 };
 
 const config = ({
