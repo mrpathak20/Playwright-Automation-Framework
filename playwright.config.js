@@ -1,61 +1,48 @@
-import { defineConfig, devices} from '@playwright/test';
-//import globalTeardown from './utils/CommonUtilities.js';
+import { defineConfig, devices } from '@playwright/test';
+import { loadEnvironment } from './utils/environmentUtil.js';
+import { printExecutionDashboard } from "./utils/dashboardUtil.js";
 
+const ENV = process.env.TEST_ENV || 'uat';
 
-const ENV = process.env.ENV || 'uat';
- 
-const ENV_URLS = {
-  dev: '',
-  prod: '',
-  uat:''
-};
+loadEnvironment(ENV);
 
-const config = ({
-  testDir: './tests',
-  timeout:  30*10000,
-  expect : { 
-    timeout: 50*1000,
+printExecutionDashboard();
+export default defineConfig({
 
-  },
+    testDir: './tests',
 
-  
+    timeout: 300000,
 
-  
-  reporter: [
-     ['json',{ outputFile:'test-result.json'}],
-      ['html']
-    
-],
- 
+    fullyParallel: false,
 
-   fullyParallel: false,
-  
-  use: {
+    reporter: [
 
-    browserName : 'chromium',
-    headless : true,
-    screenshot : 'On',
-    video: 'On',
-    ignoreHttpsErrors:true,
-   permissions:['geolocation'],
-   baseURL: ENV_URLS[ENV],
-    
-    trace : 'on',//off,on
-    ...devices['Galaxy S24'],
-    launchOptions: {
-      args: ['--start-maximized'],
+        ['json', { outputFile: 'test-result.json' }],
+
+        ['html']
+
+    ],
+
+    use: {
+
+        baseURL: process.env.BASE_URL,
+
+        browserName: 'chromium',
+
+        headless: true,
+
+        screenshot: 'on',
+
+        video: 'on',
+
+        trace: 'on',
+
+        ignoreHTTPSErrors: true,
+
+        permissions: ['geolocation'],
+
+        ...devices['Galaxy S24']
+
     }
 
-   
-   
-  },
-
-  /* Configure projects for major browsers */
-
-
-
-
-
 });
-module.exports = config
-

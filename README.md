@@ -2,19 +2,22 @@
 
 # 🚀 Playwright Automation Framework
 
-### Production-Ready | Data-Driven | Cross-Browser | Mobile Web | CI/CD Ready
+### Enterprise-Ready | Smart Utilities | Data-Driven | Cross-Browser | Mobile Web
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Version-v1.1.0-blue"/>
   <img src="https://img.shields.io/badge/Playwright-Latest-2EAD33?logo=playwright&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/Node.js-20+-339933?logo=node.js&logoColor=white"/>
   <img src="https://img.shields.io/badge/Architecture-POM-blue"/>
   <img src="https://img.shields.io/badge/Data--Driven-Excel-success"/>
-  <img src="https://img.shields.io/badge/CI-CD-orange"/>
+  <img src="https://img.shields.io/badge/Execution-Smart-green"/>
   <img src="https://img.shields.io/badge/Open%20Source-❤️-red"/>
 </p>
 
-A scalable, reusable and production-ready Playwright Automation Framework designed for modern web and mobile browser testing with enterprise-grade reporting and utilities.
+A scalable, reusable, and enterprise-ready Playwright Automation Framework designed for modern web and mobile browser automation.
+
+Built with clean architecture, reusable utilities, smart execution features, environment management, cross-browser testing, and browser-based mobile automation.
 
 ⭐ **If you like this project, don't forget to Star this repository!**
 
@@ -24,29 +27,211 @@ A scalable, reusable and production-ready Playwright Automation Framework design
 
 # 📖 Overview
 
-This framework is designed to simplify automation by following industry best practices and a clean architecture.
+This framework is built following enterprise automation best practices with a focus on maintainability, scalability, and execution stability.
 
-It provides reusable utilities, organized reporting, browser-based mobile testing, cross-browser execution, and scalable project structure suitable for real-world automation projects.
+It helps teams build reliable Playwright automation by providing reusable utilities, environment management, smart execution helpers, organized artifacts, and modular project architecture.
+
+---
+
+# 🚀 What's New in v1.1
+
+- ✅ **Assertion Utility**
+- ✅ Environment Management
+- ✅ Execution Dashboard
+- ✅ Smart Retry Engine
+- ✅ Smart Click Utility
+- ✅ Smart Fill Utility
+- ✅ Smart Wait Utility
+
 
 ---
 
 # ✨ Features
 
+## Framework
+
 - ✅ Page Object Model (POM)
-- ✅ Fully Data-Driven Framework (Excel)
+- ✅ Modular Architecture
 - ✅ Cross Browser Testing
 - ✅ Browser-Based Mobile Testing
 - ✅ Parallel Execution
+- ✅ Excel Data-Driven Framework
+
+## Smart Execution
+
+- ✅ Smart Click Utility
+- ✅ Smart Fill Utility
+- ✅ Smart Wait Utility
+- ✅ Generic Retry Utility
+- ✅ Assertion Utility
+- ✅ Execution Dashboard
+- ✅ Multi-Environment Support
+
+## Utilities
+
+- ✅ Excel Utility
 - ✅ Screenshot Utility
 - ✅ Download Utility
-- ✅ Report Utility
 - ✅ Faker Utility
-- ✅ Excel Utility
 - ✅ Date & Time Utility
+- ✅ Common Utility
+
+## Reporting
+
+- ✅ HTML Report
+- ✅ Automatic Screenshots
 - ✅ Smart Artifact Management
-- ✅ GitHub Actions (CI/CD)
-- ✅ Modular Project Structure
-- ✅ Easily Extendable
+
+---
+
+# 🌍 Environment Management
+
+Execute the same test suite across multiple environments without changing code.
+
+Supported environments:
+
+```
+config
+│
+└── environment
+    ├── dev.env
+    ├── uat.env
+    ├── pre-prod.env
+    └── prod.env
+```
+
+Run Tests
+
+```bash
+npm run uat
+
+npm run preprod
+
+npm run prod
+```
+
+Simply switch the command.
+
+No code changes required.
+
+---
+
+# 📊 Execution Dashboard
+
+Every execution automatically displays
+
+- Framework Version
+- Environment
+- Base URL
+- Browser
+- Execution Mode
+- Workers
+- Platform
+- Operating System
+- Node Version
+- Execution Start Time
+
+Example
+
+```
+══════════════════════════════════════════════════════════════
+
+🚀 Playwright Automation Framework
+
+Framework Version : v1.1.0
+
+Environment       : UAT
+
+Browser           : Chromium
+
+Execution Mode    : Parallel
+
+Workers           : 4
+
+Platform          : Windows
+
+Node Version      : v22.x
+
+Started At        : 30-Jul-2026
+
+══════════════════════════════════════════════════════════════
+```
+
+---
+
+# ⚡ Smart Utilities
+
+The framework includes reusable smart utilities designed to improve execution stability.
+
+### Smart Click
+
+```javascript
+await smartClick(page.locator("#login"));
+```
+
+Automatically
+
+- Waits for visibility
+- Scrolls into view
+- Retries on failure
+- Provides detailed logs
+
+---
+
+### Smart Fill
+
+```javascript
+await smartFill(username,"Admin");
+```
+
+Automatically
+
+- Waits until editable
+- Clears existing value
+- Enters data
+- Verifies entered value
+- Retries if required
+
+---
+
+### Smart Wait
+
+```javascript
+await waitForPageReady(page);
+```
+
+Waits for
+
+- DOM Loaded
+- Network Idle
+- Loader Disappearance
+- Spinner Completion
+
+---
+
+### Assertion Utility
+
+Instead of
+
+```javascript
+await expect(locator).toBeVisible();
+```
+
+Use
+
+```javascript
+await Assertion.assertVisible(locator);
+```
+
+Supports
+
+- Element Assertions
+- Page Assertions
+- URL Assertions
+- Text Assertions
+- Count Assertions
+- API Assertions
+- Generic Assertions
 
 ---
 
@@ -68,64 +253,74 @@ It provides reusable utilities, organized reporting, browser-based mobile testin
 ```
 Playwright_Automation
 │
-├── pages
-├── tests
-├── testData
-├── utilities
-├── reports
-├── screenshots
-├── downloads
 ├── config
+│   ├── environment
+│   └── executionConfig.js
+│
+├── pages
+│
+├── tests
+│
+├── testData
+│
+├── utilities
+│   ├── assertionUtil.js
+│   ├── clickUtil.js
+│   ├── dashboardUtil.js
+│   ├── downloadUtil.js
+│   ├── environmentUtil.js
+│   ├── excelUtil.js
+│   ├── fakerUtil.js
+│   ├── fillUtil.js
+│   ├── retryUtil.js
+│   ├── screenshotUtil.js
+│   └── waitUtil.js
+│
+├── reports
+│
+├── screenshots
+│
+├── downloads
+│
 ├── playwright.config.js
+│
 └── package.json
 ```
 
 ---
 
-# ⚡ Utilities
-
-- 📊 Excel Utility
-- 📸 Screenshot Utility
-- 📥 Download Utility
-- 📑 Report Utility
-- 🎲 Faker Utility
-- 📱 Mobile Scroll Utility
-- 🕒 Date & Time Utility
-- 🔧 Common Utility
-
----
-
 # 📊 Reporting
 
-Automatically generates:
+Automatically generates
 
+- HTML Report
 - Execution Summary
 - Passed Test Cases
 - Failed Test Cases
-- Date-wise Reports
-- Time-wise Execution
+- Execution Duration
+- Screenshots
 - Organized Artifacts
-- Screenshot Attachments
 
 ---
 
-# 📁 Artifact Management
+# 📁 Smart Artifact Management
 
-Each execution automatically creates:
+Each execution automatically creates
 
 ```
 Execution Date
-    ├── Reports
-    ├── Screenshots
-    ├── Downloads
-    └── Artifacts
+│
+├── Reports
+├── Screenshots
+├── Downloads
+└── Artifacts
 ```
 
 No overwritten reports.
 
 No mixed screenshots.
 
-Everything stays organized.
+Clean execution history.
 
 ---
 
@@ -134,59 +329,52 @@ Everything stays organized.
 Supports browser-based mobile automation using Playwright Device Emulation.
 
 - Responsive Testing
-- Mobile Scroll
-- Touch Actions
+- Mobile Scroll Utility
+- Touch Gestures
 - Mobile Viewports
+- Cross Device Validation
 
 ---
 
 # 🚀 Parallel Execution
 
-Execute multiple browsers simultaneously with:
+Supports
 
+- Multiple Workers
+- Stable Parallel Execution
 - Independent Reports
-- Separate Screenshots
-- Faster Execution
-- Stable Test Runs
+- Faster Test Execution
+- Cross Browser Execution
 
 ---
 
-# 🔄 CI/CD
-
-Ready for:
-
-- GitHub Actions
-- Jenkins
-- Azure DevOps
-- GitLab CI
-
----
-
-# 🖼️ Screenshots
+# 📷 Framework Screenshots
 
 ## Framework Structure
 
-> *(Add screenshot here)*
+```
+images/framework-structure.png
+```
+
+---
+
+## Execution Dashboard
 
 ```
-images/framework.png
+images/dashboard.png
 ```
 
 ---
 
 ## HTML Report
 
-> *(Add screenshot here)*
-
 ```
-images/report.png
+images/html-report.png
 ```
 
 ---
 
 ## Artifacts
-
-> *(Add screenshot here)*
 
 ```
 images/artifacts.png
@@ -196,49 +384,89 @@ images/artifacts.png
 
 # 🚀 Getting Started
 
-Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/mrpathak20/Playwright-Automation-Framework.git
 ```
 
-Install Dependencies
+---
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-Install Browsers
+---
+
+## Install Browsers
 
 ```bash
 npx playwright install
 ```
 
-Run Tests
+---
+
+## Run Tests
 
 ```bash
 npx playwright test
 ```
 
-Run in Headed Mode
+---
+
+## Run UAT
 
 ```bash
-npx playwright test --headed
+npm run uat
 ```
 
 ---
 
-# 🛣️ Roadmap
+## Run Pre-Production
 
-- AI Test Case Generation
-- Playwright MCP Integration
-- AI Agent Support
-- API Testing Enhancements
-- Docker Support
-- Allure Reporting
-- Slack Notifications
+```bash
+npm run preprod
+```
 
 ---
+
+## Run Production
+
+```bash
+npm run prod
+```
+
+---
+
+# 📦 Release History
+
+## 🚀 v1.1.0 - Intelligent Execution Update
+
+- Environment Management
+- Execution Dashboard
+- Smart Retry Utility
+- Smart Click Utility
+- Smart Fill Utility
+- Smart Wait Utility
+- Assertion Utility
+
+---
+
+## 🚀 v1.0.0
+
+- Page Object Model
+- Excel Data Driven Framework
+- Cross Browser Testing
+- Mobile Browser Automation
+- API Utility
+- Database Utility
+- HTML Reporting
+- Organized Artifacts
+
+---
+
 
 # 🤝 Contributions
 
@@ -253,19 +481,18 @@ If you'd like to improve this framework:
 
 ---
 
-# 💼 Freelancing
+# 💼 Services
 
-I'm available for:
+Available for
 
 - Playwright Framework Development
 - QA Automation
-- Browser Automation
-- Mobile Web Testing
+- UI Automation
 - API Automation
-- CI/CD Integration
+- Mobile Web Automation
 - Test Framework Design
-
-📩 Feel free to connect on LinkedIn or GitHub.
+- CI/CD Integration
+- Automation Consulting
 
 ---
 
@@ -285,8 +512,8 @@ If this project helped you,
 
 <div align="center">
 
-### Made with ❤️ by Priyanshu Pathak
+## 🚀 Made with ❤️ by Priyanshu Pathak
 
-**Happy Testing 🚀**
+### Happy Testing!
 
 </div>
