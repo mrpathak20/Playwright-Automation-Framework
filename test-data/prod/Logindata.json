@@ -1,0 +1,10 @@
+{
+    "validUser": {
+        "username": "preprod_admin",
+        "password": "Password123"
+    },
+    "invalidUser": {
+        "username": "wrong_user",
+        "password": "wrong_password"
+    }
+}

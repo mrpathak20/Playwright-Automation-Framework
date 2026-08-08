@@ -1,6 +1,5 @@
 /**
  * Generic retry utility
- * Reuses the same retry logic across Smart Click, Smart Fill, etc.
  */
 
 export async function retry(

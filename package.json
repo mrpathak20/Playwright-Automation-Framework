@@ -8,23 +8,30 @@
     "playw0:uat": "cross-env TEST_ENV=uat playwright test tests/playw0.spec.js --headed",
     "playw0:prod": "cross-env TEST_ENV=prod playwright test tests/playw0.spec.js --headed",
     "playw1:uat": "cross-env TEST_ENV=uat playwright test tests/playw1.spec.js --headed",
-    "playw1:prod": "cross-env TEST_ENV=prod playwright test tests/playw1.spec.js --headed"
+    "playw1:prod": "cross-env TEST_ENV=prod playwright test tests/playw1.spec.js --headed",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure": "npm run allure:generate && npm run allure:open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.62.1",
     "@types/node": "^25.0.7",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2",
     "exceljs": "^4.4.0",
     "playwright": "^1.56.0",
     "xlsx": "^0.18.5"
   },
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
+    "allure-js-commons": "^3.10.2",
+    "archiver": "^8.0.0",
     "cross-env": "^10.1.0",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "nodemailer": "^9.0.4"
   }
 }
-

@@ -7,37 +7,37 @@ export class Assertion {
     ========================== */
 
     static async assertVisible(locator, message = "Element should be visible") {
-        console.log(`🔍 ${message}`);
+        console.log(` ${message}`);
         await expect(locator).toBeVisible();
     }
 
     static async assertHidden(locator, message = "Element should be hidden") {
-        console.log(`🔍 ${message}`);
+        console.log(`${message}`);
         await expect(locator).toBeHidden();
     }
 
     static async assertEnabled(locator, message = "Element should be enabled") {
-        console.log(`🔍 ${message}`);
+        console.log(`${message}`);
         await expect(locator).toBeEnabled();
     }
 
     static async assertDisabled(locator, message = "Element should be disabled") {
-        console.log(`🔍 ${message}`);
+        console.log(`${message}`);
         await expect(locator).toBeDisabled();
     }
 
     static async assertEditable(locator, message = "Element should be editable") {
-        console.log(`🔍 ${message}`);
+        console.log(`${message}`);
         await expect(locator).toBeEditable();
     }
 
     static async assertChecked(locator, message = "Checkbox should be checked") {
-        console.log(`🔍 ${message}`);
+        console.log(`${message}`);
         await expect(locator).toBeChecked();
     }
 
     static async assertFocused(locator, message = "Element should be focused") {
-        console.log(`🔍 ${message}`);
+        console.log(`${message}`);
         await expect(locator).toBeFocused();
     }
 
@@ -46,22 +46,22 @@ export class Assertion {
     ========================== */
 
     static async assertText(locator, expectedText) {
-        console.log(`🔍 Validating text : ${expectedText}`);
+        console.log(`Validating text : ${expectedText}`);
         await expect(locator).toHaveText(expectedText);
     }
 
     static async assertContainsText(locator, expectedText) {
-        console.log(`🔍 Validating partial text : ${expectedText}`);
+        console.log(`Validating partial text : ${expectedText}`);
         await expect(locator).toContainText(expectedText);
     }
 
     static async assertValue(locator, expectedValue) {
-        console.log(`🔍 Validating input value`);
+        console.log(`Validating input value`);
         await expect(locator).toHaveValue(expectedValue);
     }
 
     static async assertPlaceholder(locator, placeholder) {
-        console.log(`🔍 Validating placeholder`);
+        console.log(`Validating placeholder`);
         await expect(locator).toHaveAttribute("placeholder", placeholder);
     }
 
@@ -70,22 +70,22 @@ export class Assertion {
     ========================== */
 
     static async assertTitle(page, title) {
-        console.log(`🔍 Validating page title`);
+        console.log(`Validating page title`);
         await expect(page).toHaveTitle(title);
     }
 
     static async assertTitleContains(page, title) {
-        console.log(`🔍 Validating page title`);
+        console.log(`Validating page title`);
         await expect(page).toHaveTitle(new RegExp(title));
     }
 
     static async assertURL(page, url) {
-        console.log(`🔍 Validating URL`);
+        console.log(`Validating URL`);
         await expect(page).toHaveURL(url);
     }
 
     static async assertURLContains(page, text) {
-        console.log(`🔍 Validating URL contains ${text}`);
+        console.log(`Validating URL contains ${text}`);
         await expect(page).toHaveURL(new RegExp(text));
     }
 
@@ -94,7 +94,7 @@ export class Assertion {
     ========================== */
 
     static async assertCount(locator, expectedCount) {
-        console.log(`🔍 Validating locator count`);
+        console.log(`Validating locator count`);
         await expect(locator).toHaveCount(expectedCount);
     }
 
@@ -103,12 +103,12 @@ export class Assertion {
     ========================== */
 
     static async assertAttribute(locator, attribute, value) {
-        console.log(`🔍 Validating attribute ${attribute}`);
+        console.log(`Validating attribute ${attribute}`);
         await expect(locator).toHaveAttribute(attribute, value);
     }
 
     static async assertClass(locator, className) {
-        console.log(`🔍 Validating class`);
+        console.log(`Validating class`);
         await expect(locator).toHaveClass(className);
     }
 

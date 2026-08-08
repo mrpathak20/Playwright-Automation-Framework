@@ -1,15 +1,13 @@
-import { test } from '@playwright/test';
-import { Assertion } from "../utils/assertionUtil.js";
 import { ReportUtils } from '../utils/ReportUtils.js';
 const utils = require('../utils/CommonUtilities.js');
 import { FakerUtility } from '../utils/FakerUtility.js';
 import { ENV } from "../config/environment.js";
-import { smartClick } from "../utils/clickUtil.js";
-import { smartFill } from "../utils/fillUtil.js";
-import { waitForPageReady } from "../utils/waitUtil.js";
 
+import { test, expect } from "../fixtures/baseFixture";
 
 const path = require('path');
+const dataManager = require("../utils/dataManager");
+
 
 const PROJECT_ROOT = process.cwd();
 const REPORTS_ROOT = path.join(PROJECT_ROOT, 'reports');
@@ -45,6 +43,26 @@ testData.forEach((data) => {
         await smartFill(page.locator("#password"), "Password123");
 
         await waitForPageReady(page);
+          const loginData = dataManager.load("loginData");
+
+          console.log(loginData.validUser.username);  
+          await assertion.soft.assertVisible(
+        page.locator("#username")
+        );
+
+        await assertion.soft.assertVisible(
+        page.locator("#password")
+        );
+
+        await assertion.soft.assertVisible(
+        page.locator("#login")
+        );
+        const { allure } = require("allure-playwright");
+        await allure.step("Click Login Button", async () => {
+
+         await actions.smartClick(loginButton);
+
+          });
 
       
     } 

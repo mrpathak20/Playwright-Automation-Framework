@@ -1,0 +1,1 @@
+[{"values":["Version=v1.2.0"],"name":"Framework"},{"values":["UAT"],"name":"Environment"},{"values":["Chromium"],"name":"Browser"},{"values":["Date=8/6/2026, 10:28:32 PM"],"name":"Execution"},{"values":["Version=v24.18.0"],"name":"Node"},{"values":["System=Darwin 25.5.0"],"name":"Operating"},{"values":["URL=https://playwright.dev/"],"name":"Base"}]
