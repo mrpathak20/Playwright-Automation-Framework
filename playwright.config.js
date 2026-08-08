@@ -15,13 +15,22 @@ export default defineConfig({
 
     fullyParallel: false,
 
-    reporter: [
+  reporter: [
+    ['list'],
+    ['html', {
+        outputFolder: 'playwright-report',
+        open: 'never'
+    }],
+    ['json', {
+        outputFile: 'test-result.json'
+    }],
+    ['allure-playwright']
+],
 
-        ['json', { outputFile: 'test-result.json' }],
+// Ensure explicit file extensions so Node can resolve the modules reliably
+globalSetup: require.resolve("./global-setup.js"),
 
-        ['html']
-
-    ],
+globalTeardown: require.resolve("./global-teardown.js"),
 
     use: {
 

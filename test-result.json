@@ -1,0 +1,326 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/priyanshu/PROJECTS/Playwright_Automation/node_modules/.bin/playwright",
+      "test",
+      "tests/newtest.spec.js",
+      "--headed"
+    ],
+    "configFile": "/Users/priyanshu/PROJECTS/Playwright_Automation/playwright.config.js",
+    "rootDir": "/Users/priyanshu/PROJECTS/Playwright_Automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "/Users/priyanshu/PROJECTS/Playwright_Automation/global-setup.js",
+    "globalTeardown": "/Users/priyanshu/PROJECTS/Playwright_Automation/global-teardown.js",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/priyanshu/PROJECTS/Playwright_Automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "/Users/priyanshu/PROJECTS/Playwright_Automation/node_modules/allure-playwright/dist/cjs/index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "newtest.spec.js",
+      "file": "newtest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Playwright Website Validation",
+          "file": "newtest.spec.js",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Homepage Title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2397,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to https://playwright.dev/",
+                          "duration": 1397
+                        },
+                        {
+                          "title": "Verify Page Title",
+                          "duration": 5
+                        }
+                      ],
+                      "startTime": "2026-08-06T16:58:27.197Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IlBsYXl3cmlnaHQgQXV0b21hdGlvbiBGcmFtZXdvcmsifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkVudmlyb25tZW50IE1hbmFnZW1lbnQifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJWZXJpZnkgQmFzZSBVUkwgTmF2aWdhdGlvbiJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJQcml5YW5zaHUgUGF0aGFrIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InNldmVyaXR5IiwidmFsdWUiOiJjcml0aWNhbCJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InRhZyIsInZhbHVlIjoiU21va2UifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IlJlZ3Jlc3Npb24ifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IkVudmlyb25tZW50In1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiRXhlY3V0aW5nIGFnYWluc3QgdW5kZWZpbmVkIGVudmlyb25tZW50In19"
+                        },
+                        {
+                          "name": "01_HomePage",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/attachments/01-HomePage-b3a7b72d3b3140fd319a37f445816cf32486b4e0.png"
+                        },
+                        {
+                          "name": "02_TitleVerified",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/attachments/02-TitleVerified-f6b2a8f4e229ee90e870b724cc09a0cdd6fc587e.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd39a316f7618f1e6e05-93e23ef54e961d156141",
+              "file": "newtest.spec.js",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Verify Get Started Navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1867,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to https://playwright.dev/",
+                          "duration": 715
+                        },
+                        {
+                          "title": "Click Get Started",
+                          "duration": 37
+                        },
+                        {
+                          "title": "Verify Installation Page",
+                          "duration": 5
+                        }
+                      ],
+                      "startTime": "2026-08-06T16:58:29.935Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IlBsYXl3cmlnaHQgQXV0b21hdGlvbiBGcmFtZXdvcmsifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkVudmlyb25tZW50IE1hbmFnZW1lbnQifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJWZXJpZnkgQmFzZSBVUkwgTmF2aWdhdGlvbiJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJQcml5YW5zaHUgUGF0aGFrIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InNldmVyaXR5IiwidmFsdWUiOiJjcml0aWNhbCJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InRhZyIsInZhbHVlIjoiU21va2UifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IlJlZ3Jlc3Npb24ifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IkVudmlyb25tZW50In1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiRXhlY3V0aW5nIGFnYWluc3QgdW5kZWZpbmVkIGVudmlyb25tZW50In19"
+                        },
+                        {
+                          "name": "01_HomePage",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/attachments/01-HomePage-dd2cf793b4ab965fbd5977480d59da36a9ab299e.png"
+                        },
+                        {
+                          "name": "02_ClickedGetStarted",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/attachments/02-ClickedGetStarted-7574e1cfde66c04960d8afe0ff07173162d4a11e.png"
+                        },
+                        {
+                          "name": "03_InstallationPage",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/attachments/03-InstallationPage-4b48ce5aede60fce255319a5a62cad26f8cfd2e1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd39a316f7618f1e6e05-7afcf6436f1af93cb9fc",
+              "file": "newtest.spec.js",
+              "line": 69,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-06T16:58:27.034Z",
+    "duration": 6442.766,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
