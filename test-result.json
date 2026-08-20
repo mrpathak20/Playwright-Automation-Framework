@@ -106,7 +106,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2397,
+                      "duration": 3624,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -114,14 +114,14 @@
                       "steps": [
                         {
                           "title": "Navigate to https://playwright.dev/",
-                          "duration": 1397
+                          "duration": 1630
                         },
                         {
                           "title": "Verify Page Title",
                           "duration": 5
                         }
                       ],
-                      "startTime": "2026-08-06T16:58:27.197Z",
+                      "startTime": "2026-08-08T05:33:18.551Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -211,7 +211,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1867,
+                      "duration": 2266,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -219,18 +219,18 @@
                       "steps": [
                         {
                           "title": "Navigate to https://playwright.dev/",
-                          "duration": 715
+                          "duration": 1070
                         },
                         {
                           "title": "Click Get Started",
-                          "duration": 37
+                          "duration": 36
                         },
                         {
                           "title": "Verify Installation Page",
-                          "duration": 5
+                          "duration": 105
                         }
                       ],
-                      "startTime": "2026-08-06T16:58:29.935Z",
+                      "startTime": "2026-08-08T05:33:25.259Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -316,8 +316,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-06T16:58:27.034Z",
-    "duration": 6442.766,
+    "startTime": "2026-08-08T05:33:18.352Z",
+    "duration": 11460.907,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

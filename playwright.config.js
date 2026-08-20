@@ -1,4 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
+// @ts-nocheck
+import { defineConfig } from '@playwright/test';
 import { loadEnvironment } from './utils/environmentUtil.js';
 import { printExecutionDashboard } from "./utils/dashboardUtil.js";
 
@@ -10,6 +11,11 @@ printExecutionDashboard();
 export default defineConfig({
 
     testDir: './tests',
+
+    // Prevent Playwright from loading an empty/invalid root tsconfig.json.
+    tsconfig: null,
+    
+    webServer: undefined,
 
     timeout: 300000,
 
@@ -50,7 +56,7 @@ globalTeardown: require.resolve("./global-teardown.js"),
 
         permissions: ['geolocation'],
 
-        ...devices['Galaxy S24']
+        // ...devices['Galaxy S24']
 
     }
 
