@@ -1,45 +1,48 @@
 // @ts-nocheck
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 import { loadEnvironment } from './utils/environmentUtil.js';
-import { printExecutionDashboard } from "./utils/dashboardUtil.js";
+import { printExecutionDashboard } from './utils/dashboardUtil.js';
 
 const ENV = process.env.TEST_ENV || 'uat';
 
+// Load environment configuration
 loadEnvironment(ENV);
 
+// Print execution dashboard
 printExecutionDashboard();
-export default defineConfig({
 
+export default defineConfig({
     testDir: './tests',
 
-    // Prevent Playwright from loading an empty/invalid root tsconfig.json.
-    tsconfig: null,
-    
     webServer: undefined,
 
     timeout: 300000,
 
     fullyParallel: false,
 
-  reporter: [
-    ['list'],
-    ['html', {
-        outputFolder: 'playwright-report',
-        open: 'never'
-    }],
-    ['json', {
-        outputFile: 'test-result.json'
-    }],
-    ['allure-playwright']
-],
+    reporter: [
+        ['list'],
+        [
+            'html',
+            {
+                outputFolder: 'playwright-report',
+                open: 'never'
+            }
+        ],
+        [
+            'json',
+            {
+                outputFile: 'test-result.json'
+            }
+        ],
+        ['allure-playwright']
+    ],
 
-// Ensure explicit file extensions so Node can resolve the modules reliably
-globalSetup: require.resolve("./global-setup.js"),
+    globalSetup: require.resolve('./global-setup.js'),
 
-globalTeardown: require.resolve("./global-teardown.js"),
+    globalTeardown: require.resolve('./global-teardown.js'),
 
     use: {
-
         baseURL: process.env.BASE_URL,
 
         browserName: 'chromium',
@@ -52,12 +55,12 @@ globalTeardown: require.resolve("./global-teardown.js"),
 
         trace: 'on',
 
+        slowMo: 800,
+
         ignoreHTTPSErrors: true,
 
         permissions: ['geolocation'],
 
-        // ...devices['Galaxy S24']
-
+        ...devices['Galaxy S20'] // Example of using a specific device configuration
     }
-
 });

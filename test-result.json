@@ -4,7 +4,7 @@
       "/usr/local/bin/node",
       "/Users/priyanshu/PROJECTS/Playwright_Automation/node_modules/.bin/playwright",
       "test",
-      "tests/newtest.spec.js",
+      "tests/playw1.spec.js",
       "--headed"
     ],
     "configFile": "/Users/priyanshu/PROJECTS/Playwright_Automation/playwright.config.js",
@@ -78,247 +78,2158 @@
   },
   "suites": [
     {
-      "title": "newtest.spec.js",
-      "file": "newtest.spec.js",
+      "title": "playw1.spec.js",
+      "file": "playw1.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Playwright Website Validation",
-          "file": "newtest.spec.js",
-          "line": 29,
-          "column": 6,
-          "specs": [
+          "title": "test-TC01",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Verify Homepage Title",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 300000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8703,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3624,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Navigate to https://playwright.dev/",
-                          "duration": 1630
-                        },
-                        {
-                          "title": "Verify Page Title",
-                          "duration": 5
-                        }
-                      ],
-                      "startTime": "2026-08-08T05:33:18.551Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IlBsYXl3cmlnaHQgQXV0b21hdGlvbiBGcmFtZXdvcmsifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkVudmlyb25tZW50IE1hbmFnZW1lbnQifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJWZXJpZnkgQmFzZSBVUkwgTmF2aWdhdGlvbiJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJQcml5YW5zaHUgUGF0aGFrIn1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InNldmVyaXR5IiwidmFsdWUiOiJjcml0aWNhbCJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InRhZyIsInZhbHVlIjoiU21va2UifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IlJlZ3Jlc3Npb24ifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IkVudmlyb25tZW50In1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiRXhlY3V0aW5nIGFnYWluc3QgdW5kZWZpbmVkIGVudmlyb25tZW50In19"
-                        },
-                        {
-                          "name": "01_HomePage",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/attachments/01-HomePage-b3a7b72d3b3140fd319a37f445816cf32486b4e0.png"
-                        },
-                        {
-                          "name": "02_TitleVerified",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/attachments/02-TitleVerified-f6b2a8f4e229ee90e870b724cc09a0cdd6fc587e.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/video.webm"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-Validation-Verify-Homepage-Title/trace.zip"
-                        }
-                      ]
+                      "text": "[CommonUtilities] Requested to create folder: \"/Users/priyanshu/PROJECTS/Playwright_Automation/reports/03_09_2026\" under base path: \"reports\"\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Resolved folder path: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/03_09_2026\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] ℹ️ Folder already exists at: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/03_09_2026\n"
+                    },
+                    {
+                      "text": "Reports folder ready at: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/03_09_2026\n"
+                    },
+                    {
+                      "text": "Creating excel report inside: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "✓ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "Banking application card should be visible\n"
+                    },
+                    {
+                      "text": "Banking Portal - Start Practice link should be visible\n"
+                    },
+                    {
+                      "text": "\n▶ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "✓ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be visible on Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Registration Page\n"
+                    },
+                    {
+                      "text": "✓ Open Registration Page\n"
+                    },
+                    {
+                      "text": "Full Name field should be visible\n"
+                    },
+                    {
+                      "text": "Email Address field should be visible\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be visible\n"
+                    },
+                    {
+                      "text": "Password field should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be visible\n"
+                    },
+                    {
+                      "text": "Full Name field should be enabled\n"
+                    },
+                    {
+                      "text": "Email Address field should be enabled\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be enabled\n"
+                    },
+                    {
+                      "text": "Password field should be enabled\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Full Name\n"
+                    },
+                    {
+                      "text": "✓ Enter Full Name\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Email Address\n"
+                    },
+                    {
+                      "text": "✓ Enter Email Address\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "✓ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Password\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "Registration Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:54 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "✓ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Registration\n"
+                    },
+                    {
+                      "text": "✓ Continue Registration\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:54 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "✓ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "✓ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "NEFT option should be visible\n"
+                    },
+                    {
+                      "text": "NEFT option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Fund Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:54 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "✓ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be visible\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "✓ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Remarks field should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "Remarks field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:55 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "✓ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be visible\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "✓ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be visible\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:55 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "✓ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible on Dashboard\n"
+                    },
+                    {
+                      "text": "\n✅ TC01 completed successfully\n"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bd39a316f7618f1e6e05-93e23ef54e961d156141",
-              "file": "newtest.spec.js",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "Verify Get Started Navigation",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 300000,
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T09:25:46.804Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2266,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Navigate to https://playwright.dev/",
-                          "duration": 1070
-                        },
-                        {
-                          "title": "Click Get Started",
-                          "duration": 36
-                        },
-                        {
-                          "title": "Verify Installation Page",
-                          "duration": 105
-                        }
-                      ],
-                      "startTime": "2026-08-08T05:33:25.259Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IlBsYXl3cmlnaHQgQXV0b21hdGlvbiBGcmFtZXdvcmsifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkVudmlyb25tZW50IE1hbmFnZW1lbnQifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJWZXJpZnkgQmFzZSBVUkwgTmF2aWdhdGlvbiJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJQcml5YW5zaHUgUGF0aGFrIn1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InNldmVyaXR5IiwidmFsdWUiOiJjcml0aWNhbCJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InRhZyIsInZhbHVlIjoiU21va2UifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IlJlZ3Jlc3Npb24ifSx7Im5hbWUiOiJ0YWciLCJ2YWx1ZSI6IkVudmlyb25tZW50In1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiRXhlY3V0aW5nIGFnYWluc3QgdW5kZWZpbmVkIGVudmlyb25tZW50In19"
-                        },
-                        {
-                          "name": "01_HomePage",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/attachments/01-HomePage-dd2cf793b4ab965fbd5977480d59da36a9ab299e.png"
-                        },
-                        {
-                          "name": "02_ClickedGetStarted",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/attachments/02-ClickedGetStarted-7574e1cfde66c04960d8afe0ff07173162d4a11e.png"
-                        },
-                        {
-                          "name": "03_InstallationPage",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/attachments/03-InstallationPage-4b48ce5aede60fce255319a5a62cad26f8cfd2e1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/test-finished-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/video.webm"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/newtest-Playwright-Website-df5ec-rify-Get-Started-Navigation/trace.zip"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC01/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC01/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC01/trace.zip"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "bd39a316f7618f1e6e05-7afcf6436f1af93cb9fc",
-              "file": "newtest.spec.js",
-              "line": 69,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "550a47dd65d85d8cf553-5482577f1b7ebf00420a",
+          "file": "playw1.spec.js",
+          "line": 59,
+          "column": 7
+        },
+        {
+          "title": "test-TC02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4229,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n▶ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "✓ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "Banking application card should be visible\n"
+                    },
+                    {
+                      "text": "Banking Portal - Start Practice link should be visible\n"
+                    },
+                    {
+                      "text": "\n▶ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "✓ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be visible on Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Registration Page\n"
+                    },
+                    {
+                      "text": "✓ Open Registration Page\n"
+                    },
+                    {
+                      "text": "Full Name field should be visible\n"
+                    },
+                    {
+                      "text": "Email Address field should be visible\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be visible\n"
+                    },
+                    {
+                      "text": "Password field should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be visible\n"
+                    },
+                    {
+                      "text": "Full Name field should be enabled\n"
+                    },
+                    {
+                      "text": "Email Address field should be enabled\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be enabled\n"
+                    },
+                    {
+                      "text": "Password field should be enabled\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Full Name\n"
+                    },
+                    {
+                      "text": "✓ Enter Full Name\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Email Address\n"
+                    },
+                    {
+                      "text": "✓ Enter Email Address\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "✓ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Password\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "Registration Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:57 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "✓ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Registration\n"
+                    },
+                    {
+                      "text": "✓ Continue Registration\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:58 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "✓ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "✓ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "NEFT option should be visible\n"
+                    },
+                    {
+                      "text": "NEFT option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Fund Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:59 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "✓ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be visible\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "✓ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Remarks field should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "Remarks field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:59 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "✓ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be visible\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "✓ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be visible\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:55:59 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "✓ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible on Dashboard\n"
+                    },
+                    {
+                      "text": "\n✅ TC02 completed successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T09:25:55.850Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC02/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC02/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC02/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "550a47dd65d85d8cf553-af069b27564692d74c38",
+          "file": "playw1.spec.js",
+          "line": 59,
+          "column": 7
+        },
+        {
+          "title": "test-TC03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4287,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n▶ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "✓ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "Banking application card should be visible\n"
+                    },
+                    {
+                      "text": "Banking Portal - Start Practice link should be visible\n"
+                    },
+                    {
+                      "text": "\n▶ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "✓ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be visible on Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Registration Page\n"
+                    },
+                    {
+                      "text": "✓ Open Registration Page\n"
+                    },
+                    {
+                      "text": "Full Name field should be visible\n"
+                    },
+                    {
+                      "text": "Email Address field should be visible\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be visible\n"
+                    },
+                    {
+                      "text": "Password field should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be visible\n"
+                    },
+                    {
+                      "text": "Full Name field should be enabled\n"
+                    },
+                    {
+                      "text": "Email Address field should be enabled\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be enabled\n"
+                    },
+                    {
+                      "text": "Password field should be enabled\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Full Name\n"
+                    },
+                    {
+                      "text": "✓ Enter Full Name\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Email Address\n"
+                    },
+                    {
+                      "text": "✓ Enter Email Address\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "✓ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Password\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "Registration Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:02 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "✓ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Registration\n"
+                    },
+                    {
+                      "text": "✓ Continue Registration\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:02 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "✓ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "✓ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "NEFT option should be visible\n"
+                    },
+                    {
+                      "text": "NEFT option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Fund Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:03 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "✓ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be visible\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "✓ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Remarks field should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "Remarks field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:03 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "✓ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be visible\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "✓ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be visible\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:03 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "✓ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible on Dashboard\n"
+                    },
+                    {
+                      "text": "\n✅ TC03 completed successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T09:26:00.192Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC03/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC03/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC03/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "550a47dd65d85d8cf553-3cd78b44174d265d1d3d",
+          "file": "playw1.spec.js",
+          "line": 59,
+          "column": 7
+        },
+        {
+          "title": "test-TC04",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4405,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n▶ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "✓ Launch Banking Application\n"
+                    },
+                    {
+                      "text": "Banking application card should be visible\n"
+                    },
+                    {
+                      "text": "Banking Portal - Start Practice link should be visible\n"
+                    },
+                    {
+                      "text": "\n▶ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "✓ Open Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be visible on Banking Portal\n"
+                    },
+                    {
+                      "text": "Register navigation should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Registration Page\n"
+                    },
+                    {
+                      "text": "✓ Open Registration Page\n"
+                    },
+                    {
+                      "text": "Full Name field should be visible\n"
+                    },
+                    {
+                      "text": "Email Address field should be visible\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be visible\n"
+                    },
+                    {
+                      "text": "Password field should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be visible\n"
+                    },
+                    {
+                      "text": "Full Name field should be enabled\n"
+                    },
+                    {
+                      "text": "Email Address field should be enabled\n"
+                    },
+                    {
+                      "text": "Mobile Number field should be enabled\n"
+                    },
+                    {
+                      "text": "Password field should be enabled\n"
+                    },
+                    {
+                      "text": "Confirm Password field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Full Name\n"
+                    },
+                    {
+                      "text": "✓ Enter Full Name\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Email Address\n"
+                    },
+                    {
+                      "text": "✓ Enter Email Address\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "✓ Enter Mobile Number\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Password\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "✓ Enter Confirm Password\n"
+                    },
+                    {
+                      "text": "Registration Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:07 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "✓ Click Registration Next Button\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be visible\n"
+                    },
+                    {
+                      "text": "Registration second Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Registration\n"
+                    },
+                    {
+                      "text": "✓ Continue Registration\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Registration OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Registration OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be visible\n"
+                    },
+                    {
+                      "text": "Registration Submit button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:07 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "✓ Submit Registration OTP\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "✓ Open Fund Transfer Module\n"
+                    },
+                    {
+                      "text": "NEFT option should be visible\n"
+                    },
+                    {
+                      "text": "NEFT option should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Select NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Fund Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:08 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "✓ Continue to Beneficiary Selection\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be visible\n"
+                    },
+                    {
+                      "text": "BEN002 Beneficiary should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "✓ Select BEN002 Beneficiary\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be visible\n"
+                    },
+                    {
+                      "text": "Beneficiary Continue button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Details\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Remarks field should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "Remarks field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Amount\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "✓ Enter Transfer Remarks\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be visible\n"
+                    },
+                    {
+                      "text": "Transfer Details Next button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:08 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "✓ Continue Transfer Amount Validation\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Amount field should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "✓ Enter Final Transfer Amount\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be visible\n"
+                    },
+                    {
+                      "text": "Final Transfer Next button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "✓ Continue to Transfer Confirmation\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be visible\n"
+                    },
+                    {
+                      "text": "Confirm Transfer button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "✓ Confirm NEFT Transfer\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 1 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 1\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 2 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 2\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 3 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 3\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 4 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 4\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 5 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 5\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be visible\n"
+                    },
+                    {
+                      "text": "Transaction OTP field 6 should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "✓ Enter Transaction OTP Digit 6\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be visible\n"
+                    },
+                    {
+                      "text": "Verify OTP button should be enabled\n"
+                    },
+                    {
+                      "text": "\n▶ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "✓ Verify Transaction OTP\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be visible\n"
+                    },
+                    {
+                      "text": "Go To Dashboard button should be enabled\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Generating current date string (dd_mm_yyyy)...\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] System date: Thu Sep 03 2026 14:56:08 GMT+0530 (India Standard Time)\n"
+                    },
+                    {
+                      "text": "[CommonUtilities] Formatted date: 03_09_2026\n"
+                    },
+                    {
+                      "text": "\n▶ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "✓ Navigate to Dashboard\n"
+                    },
+                    {
+                      "text": "Fund Transfer option should be visible on Dashboard\n"
+                    },
+                    {
+                      "text": "\n✅ TC04 completed successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T09:26:04.604Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC04/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC04/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/priyanshu/PROJECTS/Playwright_Automation/test-results/playw1-test-TC04/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "550a47dd65d85d8cf553-9929319c5a50aa67781a",
+          "file": "playw1.spec.js",
+          "line": 59,
+          "column": 7
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-08T05:33:18.352Z",
-    "duration": 11460.907,
-    "expected": 2,
+    "startTime": "2026-09-03T09:25:46.335Z",
+    "duration": 24676.924,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
