@@ -147,7 +147,7 @@ await step('Open Registration Page', async () => {
         page.getByTestId('regEmail');
 
       const regPhone =
-        page.getByTestId('regPhone');
+        page.getByTestId('regmobileno');
 
       const regPassword =
         page.getByTestId('regPassword');
@@ -444,6 +444,7 @@ await step('Open Registration Page', async () => {
 
       const neftOption =
         page.getByTestId('type-NEFT');
+      
 
 
       await assertion.assertVisible(
