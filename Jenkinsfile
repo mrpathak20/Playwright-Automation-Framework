@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Environment Check') {
+            steps {
+                sh 'node -v'
+                sh 'npm -v'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm ci'
+            }
+        }
+
+        stage('Install Playwright Browser') {
+            steps {
+                sh 'npx playwright install chromium'
+            }
+        }
+
+        stage('Run Playwright Tests') {
+            steps {
+                sh 'npm run test:uat'
+            }
+        }
+    }
+
+    post {
+        always {
+            sh 'npm run allure:generate || true'
+
+            archiveArtifacts artifacts: 'playwright-report/**, allure-report/**, test-results/**', 
+                             allowEmptyArchive: true
+        }
+    }
+}
