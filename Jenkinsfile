@@ -25,9 +25,9 @@ pipeline {
             }
         }
 
-        stage('Run Playwright Tests') {
+       stage('Run Playwright Tests') {
             steps {
-                sh 'npm run test:uat'
+                sh 'npx cross-env TEST_ENV=uat playwright test tests/playw1.spec.js'
             }
         }
     }
