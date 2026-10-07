@@ -6,7 +6,9 @@ pipeline {
             name: 'SPEC_FILE',
             choices: [
                 'tests/playw0.spec.js',
-                'tests/playw1.spec.js'
+                'tests/playw1.spec.js',
+                'tests/parallel.spec.js'
+    
             ],
             description: 'Select the Playwright spec file to execute'
         )
