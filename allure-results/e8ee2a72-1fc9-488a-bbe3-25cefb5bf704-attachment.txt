@@ -1,0 +1,202 @@
+[CommonUtilities] Requested to create folder: "/Users/priyanshu/PROJECTS/Playwright_Automation/reports/17_09_2026" under base path: "reports"
+[CommonUtilities] Resolved folder path: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/17_09_2026
+[CommonUtilities] ℹ️ Folder already exists at: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/17_09_2026
+Reports folder ready at: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/17_09_2026
+Creating excel report inside: /Users/priyanshu/PROJECTS/Playwright_Automation/reports/17_09_2026
+
+▶ Launch Banking Application
+✓ Launch Banking Application
+Banking application card should be visible
+Banking Portal - Start Practice link should be visible
+
+▶ Open Banking Portal
+✓ Open Banking Portal
+Register navigation should be visible on Banking Portal
+Register navigation should be enabled
+
+▶ Open Registration Page
+✓ Open Registration Page
+Full Name field should be visible
+Email Address field should be visible
+Mobile Number field should be visible
+Password field should be visible
+Confirm Password field should be visible
+Full Name field should be enabled
+Email Address field should be enabled
+Mobile Number field should be enabled
+Password field should be enabled
+Confirm Password field should be enabled
+
+▶ Enter Full Name
+✓ Enter Full Name
+
+▶ Enter Email Address
+✓ Enter Email Address
+
+▶ Enter Mobile Number
+✓ Enter Mobile Number
+
+▶ Enter Password
+✓ Enter Password
+
+▶ Enter Confirm Password
+✓ Enter Confirm Password
+Registration Next button should be visible
+Registration Next button should be enabled
+[CommonUtilities] Generating current date string (dd_mm_yyyy)...
+[CommonUtilities] System date: Thu Sep 17 2026 19:06:58 GMT+0530 (India Standard Time)
+[CommonUtilities] Formatted date: 17_09_2026
+
+▶ Click Registration Next Button
+✓ Click Registration Next Button
+Registration second Next button should be visible
+Registration second Next button should be enabled
+
+▶ Continue Registration
+✓ Continue Registration
+Registration OTP field 1 should be visible
+Registration OTP field 1 should be enabled
+
+▶ Enter Registration OTP Digit 1
+✓ Enter Registration OTP Digit 1
+Registration OTP field 2 should be visible
+Registration OTP field 2 should be enabled
+
+▶ Enter Registration OTP Digit 2
+✓ Enter Registration OTP Digit 2
+Registration OTP field 3 should be visible
+Registration OTP field 3 should be enabled
+
+▶ Enter Registration OTP Digit 3
+✓ Enter Registration OTP Digit 3
+Registration OTP field 4 should be visible
+Registration OTP field 4 should be enabled
+
+▶ Enter Registration OTP Digit 4
+✓ Enter Registration OTP Digit 4
+Registration OTP field 5 should be visible
+Registration OTP field 5 should be enabled
+
+▶ Enter Registration OTP Digit 5
+✓ Enter Registration OTP Digit 5
+Registration OTP field 6 should be visible
+Registration OTP field 6 should be enabled
+
+▶ Enter Registration OTP Digit 6
+✓ Enter Registration OTP Digit 6
+Registration Submit button should be visible
+Registration Submit button should be enabled
+[CommonUtilities] Generating current date string (dd_mm_yyyy)...
+[CommonUtilities] System date: Thu Sep 17 2026 19:06:58 GMT+0530 (India Standard Time)
+[CommonUtilities] Formatted date: 17_09_2026
+
+▶ Submit Registration OTP
+✓ Submit Registration OTP
+Fund Transfer option should be visible
+Fund Transfer option should be enabled
+
+▶ Open Fund Transfer Module
+✓ Open Fund Transfer Module
+NEFT option should be visible
+NEFT option should be enabled
+
+▶ Select NEFT Transfer
+✓ Select NEFT Transfer
+Fund Transfer Next button should be visible
+[CommonUtilities] Generating current date string (dd_mm_yyyy)...
+[CommonUtilities] System date: Thu Sep 17 2026 19:06:59 GMT+0530 (India Standard Time)
+[CommonUtilities] Formatted date: 17_09_2026
+Beneficiary Next button should be visible
+Beneficiary Next button should be enabled
+
+▶ Continue to Beneficiary Selection
+✓ Continue to Beneficiary Selection
+BEN002 Beneficiary should be visible
+BEN002 Beneficiary should be enabled
+
+▶ Select BEN002 Beneficiary
+✓ Select BEN002 Beneficiary
+Beneficiary Continue button should be visible
+Beneficiary Continue button should be enabled
+
+▶ Continue to Transfer Details
+✓ Continue to Transfer Details
+Transfer Amount field should be visible
+Remarks field should be visible
+Transfer Amount field should be enabled
+Remarks field should be enabled
+
+▶ Enter Transfer Amount
+✓ Enter Transfer Amount
+
+▶ Enter Transfer Remarks
+✓ Enter Transfer Remarks
+Transfer Details Next button should be visible
+Transfer Details Next button should be enabled
+[CommonUtilities] Generating current date string (dd_mm_yyyy)...
+[CommonUtilities] System date: Thu Sep 17 2026 19:07:00 GMT+0530 (India Standard Time)
+[CommonUtilities] Formatted date: 17_09_2026
+
+▶ Continue Transfer Amount Validation
+✓ Continue Transfer Amount Validation
+Final Transfer Amount field should be visible
+Final Transfer Amount field should be enabled
+
+▶ Enter Final Transfer Amount
+✓ Enter Final Transfer Amount
+Final Transfer Next button should be visible
+Final Transfer Next button should be enabled
+
+▶ Continue to Transfer Confirmation
+✓ Continue to Transfer Confirmation
+Confirm Transfer button should be visible
+Confirm Transfer button should be enabled
+
+▶ Confirm NEFT Transfer
+✓ Confirm NEFT Transfer
+Transaction OTP field 1 should be visible
+Transaction OTP field 1 should be enabled
+
+▶ Enter Transaction OTP Digit 1
+✓ Enter Transaction OTP Digit 1
+Transaction OTP field 2 should be visible
+Transaction OTP field 2 should be enabled
+
+▶ Enter Transaction OTP Digit 2
+✓ Enter Transaction OTP Digit 2
+Transaction OTP field 3 should be visible
+Transaction OTP field 3 should be enabled
+
+▶ Enter Transaction OTP Digit 3
+✓ Enter Transaction OTP Digit 3
+Transaction OTP field 4 should be visible
+Transaction OTP field 4 should be enabled
+
+▶ Enter Transaction OTP Digit 4
+✓ Enter Transaction OTP Digit 4
+Transaction OTP field 5 should be visible
+Transaction OTP field 5 should be enabled
+
+▶ Enter Transaction OTP Digit 5
+✓ Enter Transaction OTP Digit 5
+Transaction OTP field 6 should be visible
+Transaction OTP field 6 should be enabled
+
+▶ Enter Transaction OTP Digit 6
+✓ Enter Transaction OTP Digit 6
+Verify OTP button should be visible
+Verify OTP button should be enabled
+
+▶ Verify Transaction OTP
+✓ Verify Transaction OTP
+Go To Dashboard button should be visible
+Go To Dashboard button should be enabled
+[CommonUtilities] Generating current date string (dd_mm_yyyy)...
+[CommonUtilities] System date: Thu Sep 17 2026 19:07:00 GMT+0530 (India Standard Time)
+[CommonUtilities] Formatted date: 17_09_2026
+
+▶ Navigate to Dashboard
+✓ Navigate to Dashboard
+Fund Transfer option should be visible on Dashboard
+
+✅ TC01 completed successfully

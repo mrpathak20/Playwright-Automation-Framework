@@ -18,7 +18,7 @@ const REPORT_PATH = path.join(REPORTS_ROOT, TODAYS_DATE);
 // STEP LOGGER
 // =========================================================
 
-const step = async (name, action) => {
+export const step = async (name, action) => {
   console.log(`\n▶ ${name}`);
   await action();
   console.log(`✓ ${name}`);
@@ -79,28 +79,34 @@ testData.forEach((data) => {
 
       });
 
-      await assertion.assertVisible(
-        page.getByTestId('app-card-banking'),
-        'Banking application card should be visible'
-      );
+     // =====================================================
+// 1. BANKING APPLICATION CARD
+// =====================================================
 
-      await assertion.assertContainsText(
-        page.locator('body'),
-        'Banking'
-      );
+await assertion.assertVisible(
+  page.getByTestId('app-card-banking'),
+  'Banking application card should be visible'
+);
+
+await assertion.assertContainsText(
+  page.locator('body'),
+  'Banking'
+);
 
 
-      // =====================================================
-      // 2. BANKING MODULE
-      // =====================================================
+// =====================================================
+// 2. BANKING MODULE
+// =====================================================
 
-    const bankingPortal = page.getByRole('link', {
-  name: /Banking Portal.*Start Practice/i
+const bankingCard = page.getByTestId('app-card-banking');
+
+const bankingPortal = bankingCard.getByRole('link', {
+  name: 'Open App →'
 });
 
 await assertion.assertVisible(
   bankingPortal,
-  'Banking Portal - Start Practice link should be visible'
+  'Banking Portal - Open App link should be visible'
 );
 
 await step('Open Banking Portal', async () => {
@@ -111,7 +117,6 @@ await assertion.assertURLContains(
   page,
   '/banking'
 );
-
 const registerNav = page.getByTestId('navRegister');
 
 await assertion.assertVisible(
