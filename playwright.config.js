@@ -61,6 +61,6 @@ export default defineConfig({
 
         permissions: ['geolocation'],
 
-        ...devices['Galaxy S20'] // Example of using a specific device configuration
+       // ...devices['Galaxy S20'] // Example of using a specific device configuration
     }
 });

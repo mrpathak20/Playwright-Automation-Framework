@@ -5,22 +5,14 @@ import { FakerUtility } from '../utils/FakerUtility.js';
 const utils = require('../utils/CommonUtilities.js');
 const path = require('path');
 const { takeScreenshot } = require('../utils/CommonUtilities.js');
-
-
-
 import { ENV } from "../config/environment.js";
-
 const PROJECT_ROOT = process.cwd();
 const REPORTS_ROOT = path.join(PROJECT_ROOT, 'reports');
-
 const TODAYS_DATE = utils.getCurrentDate();
 const REPORT_PATH = path.join(REPORTS_ROOT, TODAYS_DATE);
-
-
 // --------------------------------------------------
 // Readable execution step
 // --------------------------------------------------
-
 const step = async (name, action) => {
   console.log(`\n▶ ${name}`);
 
@@ -28,12 +20,9 @@ const step = async (name, action) => {
 
   console.log(`✓ ${name}`);
 };
-
-
 // --------------------------------------------------
 // Before All
 // --------------------------------------------------
-
 test.beforeAll(async () => {
 
   await utils.createFolder(REPORT_PATH);
@@ -70,11 +59,9 @@ testData.forEach((data) => {
 
       await step('Launch Banking Application', async () => {
 
-        await page.goto(ENV.baseUrl);
+        await page.goto(ENV.baseUrl);  // FOR UAT ENVIRONMENT
 
       });
-
-
     // =====================================================
 // 1. BANKING APPLICATION CARD
 // =====================================================
@@ -267,8 +254,6 @@ const testData1 = utils.getTestdata(
   'test-data/userData.xlsx',
   'Sheet1'
 );
-
-
 // =========================================================
 // BANKING TEST
 // =========================================================
@@ -294,11 +279,11 @@ testData.forEach((data) => {
 
       await step('Launch Banking Application', async () => {
 
-        await page.goto(ENV.baseUrl);
+        await page.goto(ENV.baseUrl); // FOR PROD ENVIRONMENT
 
       });
 
-     // =====================================================
+// =====================================================
 // 1. BANKING APPLICATION CARD
 // =====================================================
 

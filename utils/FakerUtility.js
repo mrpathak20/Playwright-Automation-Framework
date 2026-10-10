@@ -29,7 +29,16 @@ export class FakerUtility {
   static getAadhaarNumber() {
     return faker.string.numeric(12);
   }
+
+  //-------------------Account Number-------------------
+  static getAccountNumber() {
+    const firstDigit = faker.number.int({ min: 1, max: 9 });
+    const remainingDigits = faker.string.numeric(9);
+
+    return `${firstDigit}${remainingDigits}`;
+}
   // ------------------- Passport -------------------
+
   static getIndianPassport() {
     const letters = faker.string.alpha({ length: 2, casing: 'upper' });
     const digits = faker.string.numeric(7);

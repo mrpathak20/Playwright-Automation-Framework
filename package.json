@@ -11,7 +11,8 @@
     "playw1:prod": "cross-env TEST_ENV=prod playwright test tests/playw1.spec.js --headed",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
-    "allure": "npm run allure:generate && npm run allure:open"
+    "allure": "npm run allure:generate && npm run allure:open",
+    "parallel:uat": "cross-env TEST_ENV=uat playwright test tests/parallel.spec.js --headed --workers=3"
   },
   "keywords": [],
   "author": "",

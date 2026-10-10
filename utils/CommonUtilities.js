@@ -97,6 +97,9 @@ function getTestdata(filePath, Sheet1) {
   const workbook = XLSX.readFile(filePath);
   const Sheet = workbook.Sheets[Sheet1];
   const data = XLSX.utils.sheet_to_json(Sheet);
+  
+  console.log("RAW EXCEL DATA:", data);
+
 
   // Attach Original Index
   const dataWithIndex = data.map((row, index) => ({
@@ -107,6 +110,8 @@ function getTestdata(filePath, Sheet1) {
   //FILTER THE EXECUTOR = Y
 
   const filteredData = dataWithIndex.filter(row => String(row.executor).toUpperCase() === 'Y');
+
+    console.log("FILTERED DATA:", filteredData);
 
   return filteredData;
 }
