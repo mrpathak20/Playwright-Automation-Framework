@@ -4,26 +4,18 @@ pipeline {
     agent any
 
     parameters {
-        choice(
-            name: 'TEST_SCOPE',
-            choices: [
-                'ALL',
-                'UI_ONLY',
-                'API_ONLY',
-                'CUSTOM'
-            ],
-            description: 'Choose which category of Playwright tests to execute'
-        )
+    choice(
+        name: 'TEST_SCOPE',
+        choices: ['ALL', 'UI_ONLY', 'API_ONLY', 'CUSTOM'],
+        description: 'Select ALL, UI_ONLY, API_ONLY, or CUSTOM'
+    )
 
-        extendedChoice(
-            name: 'SPEC_FILES',
-            type: 'PT_CHECKBOX',
-            multiSelectDelimiter: ',',
-            value: 'tests/playw0.spec.js,tests/playw1.spec.js,tests/parallel.spec.js,tests/apie2e.spec.js,tests/api.spec.js',
-            defaultValue: 'tests/playw0.spec.js',
-            description: 'Select one or more spec files when TEST_SCOPE is CUSTOM'
-        )
-    }
+    string(
+        name: 'SPEC_FILES',
+        defaultValue: 'tests/playw1.spec.js,tests/parallel.spec.js',
+        description: 'For CUSTOM: comma-separated spec paths'
+    )
+}
 
     environment {
         PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
