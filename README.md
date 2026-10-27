@@ -1271,6 +1271,9 @@ This project is intended for:
 
 ---
 
+
+Verified GitHub to Jenkins CI pipeline integration.
+
 ## 🚀 Made with ❤️ by Priyanshu Pathak
 
 </div>
