@@ -2,25 +2,7 @@
 pipeline {
     agent any
 
-    parameters {
-        choice(
-            name: 'TEST_SCOPE',
-            choices: ['ALL', 'CUSTOM'],
-            description: 'Select ALL to run every test or CUSTOM to run one selected spec'
-        )
-
-        choice(
-            name: 'SPEC_FILE',
-            choices: [
-                'tests/playw0.spec.js',
-                'tests/playw1.spec.js',
-                'tests/parallel.spec.js',
-                'tests/apie2e.spec.js',
-                'tests/api.spec.js'
-            ],
-            description: 'CUSTOM: Select the single spec file to run. Ignored for ALL.'
-        )
-    }
+    
 
     environment {
         PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
