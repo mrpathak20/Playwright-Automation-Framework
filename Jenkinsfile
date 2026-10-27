@@ -130,21 +130,32 @@ pipeline {
         }
     }
 
-   
-post {
-    always {
+    post {
+      always {
         sh 'npm run allure:generate || true'
-
-        allure([
-            results: [[path: 'allure-results']]
-        ])
 
         archiveArtifacts(
             artifacts: 'playwright-report/**, allure-report/**, test-results/**',
             allowEmptyArchive: true
         )
     }
-}
+    }
+    
+   
+// post {
+//     always {
+//         sh 'npm run allure:generate || true'
+
+//         allure([
+//             results: [[path: 'allure-results']]
+//         ])
+
+//         archiveArtifacts(
+//             artifacts: 'playwright-report/**, allure-report/**, test-results/**',
+//             allowEmptyArchive: true
+//         )
+//     }
+// }
 
 }
 
