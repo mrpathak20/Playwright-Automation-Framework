@@ -130,13 +130,14 @@ pipeline {
         }
     }
 
-   post {
+  post {
     always {
         sh 'npm run allure:generate || true'
 
         allure([
             results: [[path: 'allure-results']],
-            reportBuildPolicy: 'ALWAYS'
+            reportBuildPolicy: 'ALWAYS',
+            resultPolicy: 'LEAVE_AS_IS'
         ])
 
         archiveArtifacts(
