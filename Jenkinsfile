@@ -1,21 +1,26 @@
-
-
+```groovy
 pipeline {
     agent any
 
     parameters {
-    choice(
-        name: 'TEST_SCOPE',
-        choices: ['ALL', 'UI_ONLY', 'API_ONLY', 'CUSTOM'],
-        description: 'Select ALL, UI_ONLY, API_ONLY, or CUSTOM'
-    )
+        choice(
+            name: 'TEST_SCOPE',
+            choices: ['ALL', 'CUSTOM'],
+            description: 'Select ALL to run every test or CUSTOM to run one selected spec'
+        )
 
-    string(
-        name: 'SPEC_FILES',
-        defaultValue: 'tests/playw1.spec.js,tests/parallel.spec.js',
-        description: 'For CUSTOM: comma-separated spec paths'
-    )
-}
+        choice(
+            name: 'SPEC_FILE',
+            choices: [
+                'tests/playw0.spec.js',
+                'tests/playw1.spec.js',
+                'tests/parallel.spec.js',
+                'tests/apie2e.spec.js',
+                'tests/api.spec.js'
+            ],
+            description: 'CUSTOM: Select the single spec file to run. Ignored for ALL.'
+        )
+    }
 
     environment {
         PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -36,20 +41,52 @@ pipeline {
             }
         }
 
+        stage('Select Test Files') {
+            steps {
+                script {
+                    def uiSpecs = [
+                        'tests/playw0.spec.js',
+                        'tests/playw1.spec.js',
+                        'tests/parallel.spec.js'
+                    ]
+
+                    def apiSpecs = [
+                        'tests/apie2e.spec.js',
+                        'tests/api.spec.js'
+                    ]
+
+                    def allSpecs = uiSpecs + apiSpecs
+
+                    if (params.TEST_SCOPE == 'ALL') {
+                        env.SELECTED_SPECS = allSpecs.join(',')
+                    } else {
+                        if (!(params.SPEC_FILE in allSpecs)) {
+                            error "Invalid spec file: ${params.SPEC_FILE}"
+                        }
+
+                        env.SELECTED_SPECS = params.SPEC_FILE
+                    }
+
+                    echo "Execution mode: ${params.TEST_SCOPE}"
+                    echo "Selected specs: ${env.SELECTED_SPECS}"
+                }
+            }
+        }
+
         stage('Install Playwright Browser') {
             when {
                 expression {
-                    return params.TEST_SCOPE != 'API_ONLY' &&
-                        (
-                            params.TEST_SCOPE != 'CUSTOM' ||
-                            params.SPEC_FILES.split(',').any {
-                                it.trim() in [
-                                    'tests/playw0.spec.js',
-                                    'tests/playw1.spec.js',
-                                    'tests/parallel.spec.js'
-                                ]
-                            }
-                        )
+                    def selectedSpecs = env.SELECTED_SPECS
+                        .split(',')
+                        .collect { it.trim() }
+
+                    return selectedSpecs.any {
+                        it in [
+                            'tests/playw0.spec.js',
+                            'tests/playw1.spec.js',
+                            'tests/parallel.spec.js'
+                        ]
+                    }
                 }
             }
             steps {
@@ -71,40 +108,9 @@ pipeline {
                         'tests/api.spec.js'
                     ]
 
-                    def selectedSpecs = []
-
-                    switch (params.TEST_SCOPE) {
-                        case 'ALL':
-                            selectedSpecs = uiSpecs + apiSpecs
-                            break
-
-                        case 'UI_ONLY':
-                            selectedSpecs = uiSpecs
-                            break
-
-                        case 'API_ONLY':
-                            selectedSpecs = apiSpecs
-                            break
-
-                        case 'CUSTOM':
-                            selectedSpecs = params.SPEC_FILES
-                                .split(',')
-                                .collect { it.trim() }
-                                .findAll { it }
-                            break
-                    }
-
-                    if (!selectedSpecs) {
-                        error 'No spec files selected.'
-                    }
-
-                    def invalidSpecs = selectedSpecs.findAll {
-                        !(it in uiSpecs + apiSpecs)
-                    }
-
-                    if (invalidSpecs) {
-                        error "Invalid spec file selection: ${invalidSpecs}"
-                    }
+                    def selectedSpecs = env.SELECTED_SPECS
+                        .split(',')
+                        .collect { it.trim() }
 
                     def selectedUiSpecs = selectedSpecs.findAll {
                         it in uiSpecs
@@ -114,10 +120,9 @@ pipeline {
                         it in apiSpecs
                     }
 
-                    echo "Selected spec files: ${selectedSpecs.join(', ')}"
-
                     if (selectedUiSpecs) {
                         echo 'Running UI tests against UAT'
+
                         def uiArgs = selectedUiSpecs.collect {
                             "'${it}'"
                         }.join(' ')
@@ -127,6 +132,7 @@ pipeline {
 
                     if (selectedApiSpecs) {
                         echo 'Running API tests'
+
                         def apiArgs = selectedApiSpecs.collect {
                             "'${it}'"
                         }.join(' ')
@@ -149,6 +155,7 @@ pipeline {
         }
     }
 }
+
 
 
 // pipeline {
