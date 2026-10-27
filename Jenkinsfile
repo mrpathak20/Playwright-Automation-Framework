@@ -2,8 +2,6 @@
 pipeline {
     agent any
 
-    
-
     environment {
         PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     }
@@ -39,17 +37,23 @@ pipeline {
 
                     def allSpecs = uiSpecs + apiSpecs
 
-                    if (params.TEST_SCOPE == 'ALL') {
+                    def testScope = params.TEST_SCOPE?.trim()
+                    def rawSpec = params.SPEC_FILE?.trim()
+                    def selectedSpec = rawSpec?.replaceAll(/,+$/, '')
+
+                    if (testScope == 'ALL') {
                         env.SELECTED_SPECS = allSpecs.join(',')
-                    } else {
-                        if (!(params.SPEC_FILE in allSpecs)) {
-                            error "Invalid spec file: ${params.SPEC_FILE}"
+                    } else if (testScope == 'CUSTOM') {
+                        if (!selectedSpec || !(selectedSpec in allSpecs)) {
+                            error "Invalid SPEC_FILE value: '${rawSpec}'. Check the Active Choices parameter configuration."
                         }
 
-                        env.SELECTED_SPECS = params.SPEC_FILE
+                        env.SELECTED_SPECS = selectedSpec
+                    } else {
+                        error "Invalid TEST_SCOPE value: '${testScope}'. Expected ALL or CUSTOM."
                     }
 
-                    echo "Execution mode: ${params.TEST_SCOPE}"
+                    echo "Execution mode: ${testScope}"
                     echo "Selected specs: ${env.SELECTED_SPECS}"
                 }
             }
@@ -137,6 +141,7 @@ pipeline {
         }
     }
 }
+
 
 
 
